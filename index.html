@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Modern, user-friendly, SEO-optimized dentist website providing top-quality dental services">
+    <meta name="keywords" content="dentist, dental clinic, oral health, dental care">
+    <meta name="author" content="Your Clinic Name">
+    <meta name="robots" content="index, follow">
+    <title>Your Dentist | Modern Dental Care</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-slide {
+            height: 100vh;
+            /* Full height of the viewport */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-text {
+            text-align: center;
+            max-width: 80%;
+            /* Limit the width of the text */
+            margin: 0 auto;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+        }
+
+        /* .hero-slide {
+            height: 100vh; */
+        /* Full viewport height */
+        /* display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .hero-slide h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero-slide p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        } */
+
+        /* .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-shvetsa-3845729.jpg) no-repeat center center/cover;
+            height: 100vh; */
+        /* color: white; */
+        /* color: black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        .service-img {
+            width: 100%;
+            height: 200px;
+            /* Set a uniform height */
+            object-fit: cover;
+            /* Ensure images maintain their aspect ratio while fitting the dimensions */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="bg-primary text-white py-2">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <span class="me-3"><i class="bi bi-clock"></i> Mon-Fri: 9am - 6pm</span>
+                <span class="me-3"><i class="bi bi-telephone"></i> (123) 456-7890</span>
+                <span><i class="bi bi-envelope"></i> info@yourdentist.com</span>
+            </div>
+            <div>
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Your Dentist</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal"><a
+                                href="appointment.html" class="text-white text-decoration-none"> Book
+                                Appointment</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to Your Dentist</h1>
+            <p class="lead">Top-Quality Dental Care for Your Family</p>
+            <a href="#services" class="btn btn-outline-light btn-lg">Explore Our Services</a>
+        </div>
+    </header> -->
+    <!-- <section id="home" class="hero text-center text-light">
+        <div class="fw-bold">
+            <h1 class="display-4">Welcome to Your Dentist</h1>
+            <h3 class="display-4">Your Smile, Our Priority</h3>
+            <p class="lead">Top-Quality Dental Care for Your Family.</p>
+            <a href="#services" class="btn btn-primary btn-lg"> Explore Our Services</a>
+        </div>
+    </section> -->
+    <!-- <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-slide bg-primary text-white text-center py-5">
+                    <h1>Welcome to Your Dentist</h1>
+                    <p>Providing World-Class Dental Care for Your Brightest Smile</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide bg-success text-white text-center py-5">
+                    <h1>Expert Dental Services</h1>
+                    <p>Personalized Treatments for Every Patient</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide bg-info text-white text-center py-5">
+                    <h1>Smile with Confidence</h1>
+                    <p>Book an Appointment Today!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/pexels-shvetsa-3845729.jpg" class="d-block w-100" style="height: 100vh;"
+                    alt="Welcome to Your Dentist">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Welcome to Your Dentist</h1>
+                    <p>Providing World-Class Dental Care for Your Brightest Smile</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/pexels-fr3nks-287237.jpg" class="d-block w-100" style="height: 100vh;"
+                    alt="Expert Dental Services">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Expert Dental Services</h1>
+                    <p>Personalized Treatments for Every Patient</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/pexels-pavel-danilyuk-6812456.jpg" class="d-block w-100" style="height: 100vh;"
+                    alt="Smile with Confidence">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Smile with Confidence</h1>
+                    <p>Book an Appointment Today!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Our Services</h2>
+                <p>Comprehensive dental care tailored to your needs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="img/pexels-shvetsa-3845653.jpg" class="card-img-top service-img" alt="Teeth Cleaning">
+                        <div class="card-body">
+                            <h5 class="card-title">Teeth Cleaning</h5>
+                            <p class="card-text">Keep your smile bright and healthy with professional cleaning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="img/overdenture-3597628.jpg" class="card-img-top service-img" alt="Dental Implants">
+                        <div class="card-body">
+                            <h5 class="card-title">Dental Implants</h5>
+                            <p class="card-text">Restore your confidence with durable and natural-looking implants.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="img/pexels-cottonbro-6528908.jpg" class="card-img-top service-img" alt="Orthodontics">
+                        <div class="card-body">
+                            <h5 class="card-title">Orthodontics</h5>
+                            <p class="card-text">Achieve a perfectly aligned smile with our expert orthodontic care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="img/pexels-gustavo-fring-4971514.jpg" class="card-img-top service-img"
+                            alt="Root Canals">
+                        <div class="card-body">
+                            <h5 class="card-title">Root Canals</h5>
+                            <p class="card-text">Pain-free solutions for dental health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 my-4">
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="img/pexels-shvetsa-3845653.jpg" class="card-img-top service-img" alt="Straighten">
+                        <div class="card-body">
+                            <h5 class="card-title">Straighten</h5>
+                            <p class="card-text">Keep your smile bright and healthy with professional cleaning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="img/invisalign-6551507_1280.jpg" class="card-img-top service-img" alt="Invisalign">
+                        <div class="card-body">
+                            <h5 class="card-title">Invisalign</h5>
+                            <p class="card-text">Restore your confidence with durable and natural-looking implants.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="img/pexels-arda-kaykisiz-672105204-19976554.jpg" class="card-img-top service-img"
+                            alt="Sedation">
+                        <div class="card-body">
+                            <h5 class="card-title">Sedation</h5>
+                            <p class="card-text">Achieve a perfectly aligned smile with our expert orthodontic care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="img/ai-generated-9087002_1280.jpg" class="card-img-top service-img"
+                            alt="Botox & Dermal Fill">
+                        <div class="card-body">
+                            <h5 class="card-title">Botox & Dermal Fill</h5>
+                            <p class="card-text">Pain-free solutions for dental health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/pexels-fitsumassefa-532786.jpg" class="img-fluid rounded shadow" alt="About Us">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold">About Us</h2>
+                    <p>At Your Dentist, we are dedicated to providing compassionate and personalized dental care. Our
+                        team of experienced professionals uses the latest technology to ensure you receive the best
+                        treatment possible.</p>
+                    <ul>
+                        <li>State-of-the-art equipment</li>
+                        <li>Friendly and experienced staff</li>
+                        <li>Patient-centered approach</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">What Our Patients Say</h2>
+                <p>Hear from our satisfied patients</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <p class="card-text">"The staff is amazing and made me feel so comfortable. Highly
+                                recommend!"</p>
+                            <h6 class="card-subtitle text-muted">- Jane D.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <p class="card-text">"Fantastic experience! My teeth have never looked better."</p>
+                            <h6 class="card-subtitle text-muted">- John S.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <p class="card-text">"A wonderful clinic with outstanding service."</p>
+                            <h6 class="card-subtitle text-muted">- Emily R.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">FAQs</h2>
+                <p>Answers to common questions</p>
+            </div>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                            aria-expanded="true" aria-controls="faq1">
+                            What services do you offer?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We offer a wide range of services including teeth cleaning, dental implants, orthodontics,
+                            teeth whitening, and more.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            Do you accept insurance?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we accept most major dental insurance plans. Contact us to confirm coverage.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            How can I book an appointment?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can book an appointment through our online booking form or call us directly at (123)
+                            456-7890.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Contact Us</h2>
+                <p>Have questions? We'd love to hear from you.</p>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" style="resize: both;" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-chevron-right"></i>
+                                Home</a></li>
+                        <li><a href="#services" class="text-white text-decoration-none"><i
+                                    class="bi bi-chevron-right"></i> Services</a></li>
+                        <li><a href="#about" class="text-white text-decoration-none"><i class="bi bi-chevron-right"></i>
+                                About Us</a></li>
+                        <li><a href="#testimonials" class="text-white text-decoration-none"><i
+                                    class="bi bi-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none"><i
+                                    class="bi bi-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-geo-alt"></i> 123 Dental St, Smile City</p>
+                    <p><i class="bi bi-telephone"></i> (123) 456-7890</p>
+                    <p><i class="bi bi-envelope"></i> info@yourdentist.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Newsletter</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-3 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <small>&copy; 2025 Your Dentist. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back-to-Top Button -->
+    <button type="button" class="btn btn-primary btn-lg rounded-circle back-to-top"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="bi bi-arrow-up-circle"></i>
+    </button>
+
+    <script>
+        // Show Back-to-Top Button on Scroll
+        const backToTopButton = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/appointment.js"></script> -->
+</body>
+
+</html>
